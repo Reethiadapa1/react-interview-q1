@@ -1,0 +1,45 @@
+.result-container {
+	margin: auto;
+	margin-top: 20px;
+	max-width: 50%;
+	border: 2px solid #877777;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.result-header {
+	display: flex;
+}
+
+.result-header-cell {
+	flex-basis: 50%;
+}
+
+.header-text {
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.result-values {
+	display: flex;
+}
+
+.result-values--even {
+	background-color: #dcdcdc;
+}
+
+.result-values--odd {
+	background-color: #fff;
+}
+
+.result-value-cell {
+	flex-basis: 50%;
+	padding: 8px;
+}
+
+@media screen and (max-width: 800px) {
+	.result-container {
+		max-width: calc(100% - 16px);
+	}
+}
